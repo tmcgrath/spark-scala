@@ -21,5 +21,6 @@ libraryDependencies ++= Seq(
 // "org.apache.spark" %% "spark-sql" % "1.6.1" % "provided",
 // comment above line and uncomment the following to run in sbt
    "org.apache.spark" %% "spark-sql" % "1.6.1",
-   "com.datastax.spark" %% "spark-cassandra-connector" % "1.5.0"
+   "com.datastax.spark" %% "spark-cassandra-connector" % "1.5.0",
+   "com.github.scopt" %% "scopt" % "3.5.0"
 )
