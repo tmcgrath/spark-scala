@@ -6,6 +6,7 @@ assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeSca
 
 assemblyMergeStrategy in assembly := {
   case PathList("org", "apache", "spark", "unused", "UnusedStubClass.class") => MergeStrategy.first
+  case PathList("META-INF", "io.netty.versions.properties") => MergeStrategy.last
   case x =>
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
@@ -27,7 +28,7 @@ javaOptions in run ++= Seq(
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "1.6.2" % "provided",
   "org.apache.spark" %% "spark-sql" % "1.6.2" % "provided",
-  "com.datastax.spark" %% "spark-cassandra-connector" % "1.6.0" % "provided",
+  "com.datastax.spark" %% "spark-cassandra-connector" % "1.6.0",
   "org.apache.spark" %% "spark-streaming" % "1.6.2" % "provided", 
   "org.apache.spark" %% "spark-streaming-kafka" % "1.6.2"
 )
