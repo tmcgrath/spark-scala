@@ -3,7 +3,11 @@
 This is a Spark Streaming job which streams weather data from Kafka
 and stores into two Cassandra tables.
 
-It borrows heavily from KillrWeather application found at https://github.com/killrweather/killrweather
+For complete instructions, see
+https://www.supergloo.com/fieldnotes/spark-streaming-kafka-example/
+
+Credits:
+Concepts and some code reused from KillrWeather application found at https://github.com/killrweather/killrweather
 
 #### To run on local machine
 
@@ -22,3 +26,4 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
   --new-producer < ny-2008.csv```
 
 #### Monitor with SparkLint
+TBD
