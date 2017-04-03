@@ -26,4 +26,9 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
   --new-producer < ny-2008.csv```
 
 #### Monitor with SparkLint
-TBD
+
+The SparkLint monitoring tool is included and described in TBD post
+
+To activate, pass in the extraListener arg when submitting; i.e.
+
+--conf spark.extraListeners=com.groupon.sparklint.SparklintListener
