@@ -4,7 +4,7 @@ This is a Spark Streaming job which streams weather data from Kafka
 and stores into two Cassandra tables.
 
 For complete instructions, see
-[https://supergloo.com/spark-streaming/spark-streaming-kafka-example/](Spark Streaming with Kafka Example)
+(https://supergloo.com/spark-streaming/spark-streaming-kafka-example/)[Spark Streaming with Kafka Example]
 
 Credits:
 Concepts and some code reused from KillrWeather application found at https://github.com/killrweather/killrweather
