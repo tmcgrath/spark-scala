@@ -2,4 +2,4 @@
 
 Spark with Scala example projects
 
-[More Scala Spark Tutorials and Examples](https://supergloo.com/spark-tutorial/spark-tutorials-scala/) 
+[Scala Spark Tutorials and Examples](https://supergloo.com/spark-tutorial/spark-tutorials-scala/) 
